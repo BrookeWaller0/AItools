@@ -3,242 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Homepage</title>
+    <title>News and Blog Page</title>
     <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
-
-        /* Header styles */
         header {
             background-color: #333;
             color: #fff;
+            padding: 10px 20px;
             text-align: center;
-            padding: 1rem 0;
         }
-
-        /* Navigation styles */
         nav {
-            background-color: #444;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
             text-align: center;
-            padding: 0.5rem 0;
         }
-
         nav a {
-            color: #fff;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            margin: 0 0.25rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            color: #333;
+            padding: 0 10px;
         }
-
         nav a:hover {
-            background-color: #555;
+            color: #555;
         }
-
-        /* Hero banner styles */
-        .hero-banner {
-            background-image: url('banner-image.jpg'); /* Replace with your image */
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-            margin-bottom: 2rem;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
-
-        .hero-banner h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
         }
-
-        .hero-banner p {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Features section styles */
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin: 2rem auto;
-            max-width: 1200px;
-            padding: 0 2rem;
-        }
-
-        .feature {
-            text-align: center;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            transition: transform 0.3s ease;
-            margin-bottom: 2rem;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature h3 {
-            margin-top: 0;
-            color: #333;
-            font-size: 2rem;
-        }
-
-        .feature p {
-            color: #666;
-            font-size: 1.2rem;
-        }
-
-        /* Products section styles */
-        .products {
-            display: flex;
-            justify-content: space-around;
-            margin: 2rem auto;
-            max-width: 1200px;
-            padding: 0 2rem;
-        }
-
-        .product {
-            text-align: center;
-            background-color: #8dc63f;
-            padding: 3rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            transition: transform 0.3s ease;
-            margin-bottom: 2rem;
-        }
-
-        .product:hover {
-            transform: translateY(-5px);
-        }
-
-        .product h3 {
-            margin-top: 0;
-            color: #fff;
-            font-size: 2rem;
-        }
-
-        /* Reviews section styles */
-        .reviews {
-            background-color: #f9f9f9;
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 1200px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .review {
-            border-left: 4px solid #333;
-            padding-left: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .review h3 {
-            margin-top: 0;
+        .article h2 {
             color: #333;
         }
-
-        .review p {
+        .article p {
             color: #666;
         }
-
-        /* Footer styles */
         footer {
-            text-align: center;
-            padding: 1rem 0;
             background-color: #333;
             color: #fff;
+            text-align: center;
+            padding: 10px 20px;
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Sleek Homepage</h1>
+        <h1>News and Blog</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
     </nav>
-    <section class="hero-banner">
-        <div class="container">
-            <h2>Discover Amazing Things</h2>
-            <p>Explore our services and discover why our customers love us.</p>
-        </div>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <img src="tshirt-icon.png" alt="T-shirt Icon" width="100">
-            <h3>T-shirts</h3>
-            <p>High-quality T-shirts in various styles and colors.</p>
-        </div>
-        <div class="feature">
-            <img src="cup-icon.png" alt="Cup Icon" width="100">
-            <h3>Cups</h3>
-            <p>Customizable cups for every occasion.</p>
-        </div>
-        <div class="feature">
-            <img src="hat-icon.png" alt="Hat Icon" width="100">
-            <h3>Hats</h3>
-            <p>Trendy hats to complement your style.</p>
-        </div>
-    </section>
-    <section class="products">
-        <div class="product">
-            <h3>Cups</h3>
-        </div>
-        <div class="product">
-            <h3>T-shirts</h3>
-        </div>
-        <div class="product">
-            <h3>Hats</h3>
-        </div>
-    </section>
-    <section class="reviews">
-        <div class="container">
-            <h2>Customer Reviews</h2>
-            <div class="review">
-                <h3>John Doe</h3>
-                <p>"Amazing service! The team went above and beyond my expectations."</p>
-            </div>
-            <div class="review">
-                <h3>Jane Smith</h3>
-                <p>"Highly recommend! Professional and friendly staff."</p>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <section class="article">
+            <h2>Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget est placerat, ac convallis dolor ullamcorper.</p>
+        </section>
+        <section class="article">
+            <h2>Recent Blog Posts</h2>
+            <article>
+                <h3>Post Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget est placerat, ac convallis dolor ullamcorper.</p>
+            </article>
+            <article>
+                <h3>Another Post Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero eget est placerat, ac convallis dolor ullamcorper.</p>
+            </article>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Sleek Homepage. All rights reserved.</p>
+        <p>&copy; 2024 News and Blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
